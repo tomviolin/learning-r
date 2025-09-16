@@ -1,10 +1,21 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <!-- QR CODE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
 <body>
-<img src="sfsheader.png"><br clear="all">
+  <img src="sfsheader.png"><br clear="all">
   <h1>Learning R - a brief overview</h1>
-  <ol><li>
-    <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
-  </li></ol>
+  <ol>
+    <li>
+      <a href="https://colab.research.google.com/#create=true&language=r">SUPER QUICK START</a>
+      <div id="qrcode"></div>
+      <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode"), "https://colab.research.google.com/#create=true&language=r");
+      </script>
+    </li>
+  </ol>
 </body>
 </html>
 
